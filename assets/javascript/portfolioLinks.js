@@ -37,12 +37,18 @@ var videoSearch = {
 
 var portArr = [trainSched, psychicGame, crystalCol, getGiph, videoSearch];
 
-for (var i = 0; i < portArr.length; i++) {
-    console.log(portArr[i].name);
+var anchor;
 
-    var anchor = $("<a>");
-    var anchorLink = portArr[i].link;
-    anchor.attr("href",anchorLink);
+for (var i = 0; i < portArr.length; i++) {
+
+    var anchorButton = $("<button>");
+    anchorButton.attr("id","button");
+    anchorButton.attr("type","button");
+    anchorButton.attr("class","btn btn-outline primary");
+    anchorButton.text("click me");
+
+    var anchor = portArr[i].link;
+
 
     var cardImage = $("<img>");
     var pictImage = portArr[i].image;
@@ -67,12 +73,17 @@ for (var i = 0; i < portArr.length; i++) {
 
     var card = $("<div>");
      card.attr("id", portArr[i]);
-    card.attr("class","card border-secondary mb-3 card-body text-secondary m-3 p-1")
+    card.attr("class","card border-secondary mb-3 card-body text-secondary m-3 p-1");
     card.append(cardImage);
     card.append(cardBody);
+    card.append(anchorButton);
 
     $("#cardDeck").prepend(card);
-    console.log("and that should be it");
+
 };
+
+$(document).on("click","#button",function(){
+    console.log(anchor);
+});
 
 });
