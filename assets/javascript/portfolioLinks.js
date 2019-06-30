@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 var trainSched = {
+    id : 0,
     name: "Train Schedualer",
     link: "https://martucazpo.github.io/trainSchedualor/",
     image: "assets/images/Screenshot (5).png",
@@ -8,6 +9,7 @@ var trainSched = {
 };
 
 var psychicGame = {
+    id : 1,
     name: "Psychic Game",
     link: "https://martucazpo.github.io/psychicGame/",
     image: "assets/images/scott-rodgerson-375874-unsplash.jpg",
@@ -15,6 +17,7 @@ var psychicGame = {
 };
 
 var crystalCol = {
+    id : 2,
     name: "Crystal Collector",
     link: "https://martucazpo.github.io/unit-4-game",
     image: "assets/images/1-CrystalCollector.jpg",
@@ -22,6 +25,7 @@ var crystalCol = {
 };
 
 var getGiph = {
+    id : 3,
     name: "Get Giphy With It",
     link: "https://martucazpo.github.io/getGiphyWiphIt",
     image: "assets/images/Screenshot (4).png",
@@ -29,6 +33,7 @@ var getGiph = {
 };
 
 var videoSearch = {
+    id : 4,
     name: "Group one Project: Video Search",
     link: "https://cmoconnor0823.github.io/Group-Project-One/",
     image: "assets/images/Screenshot (6).png",
@@ -37,17 +42,20 @@ var videoSearch = {
 
 var portArr = [trainSched, psychicGame, crystalCol, getGiph, videoSearch];
 
-var anchor;
+var trainLink;
+var psychicLink;
+var crystalLink;
+var giphyLink;
+var videoLink;
 
 for (var i = 0; i < portArr.length; i++) {
 
-    var anchorButton = $("<button>");
-    anchorButton.attr("id","button");
-    anchorButton.attr("type","button");
-    anchorButton.attr("class","btn btn-outline primary");
-    anchorButton.text("click me");
 
-    var anchor = portArr[i].link;
+    trainLink = portArr[0].link;
+    psychicLink = portArr[1].link;
+    crystalLink = portArr[2].link;
+    giphyLink = portArr[3].link;
+    videoLink = portArr[4].link;
 
 
     var cardImage = $("<img>");
@@ -72,18 +80,34 @@ for (var i = 0; i < portArr.length; i++) {
 
 
     var card = $("<div>");
-     card.attr("id", portArr[i]);
+    card.attr("id", portArr[i].id);
     card.attr("class","card border-secondary mb-3 card-body text-secondary m-3 p-1");
+    card.attr("type","button");
     card.append(cardImage);
     card.append(cardBody);
-    card.append(anchorButton);
 
     $("#cardDeck").prepend(card);
 
 };
 
-$(document).on("click","#button",function(){
-    console.log(anchor);
+$(document).on("click","#0",function(){
+    window.open(trainLink);
+});
+
+$(document).on("click","#1",function(){
+    window.open(psychicLink);
+});
+
+$(document).on("click","#2",function(){
+    window.open(crystalLink);
+});
+
+$(document).on("click","#3",function(){
+    window.open(giphyLink);
+});
+
+$(document).on("click","#4",function(){
+    window.open(videoLink);
 });
 
 });
