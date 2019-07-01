@@ -42,13 +42,22 @@ $(document).ready(function () {
         description: "A video game search, using two APIs. AJAX, SASS, and JQuery"
     };
 
-    var portArr = [trainSched, psychicGame, crystalCol, getGiph, videoSearch];
+    var gitHub = {
+        id : 5,
+        name : "Git Hub Profile and Repositories",
+        link : "https://github.com/martucazpo",
+        image : "assets/images/Screenshot (7).png",
+        description : "A link to my Git Hub pages"
+    }
+
+    var portArr = [trainSched, psychicGame, crystalCol, getGiph, videoSearch, gitHub];
 
     var trainLink;
     var psychicLink;
     var crystalLink;
     var giphyLink;
     var videoLink;
+    var gitHubLink;
 
     for (var i = 0; i < portArr.length; i++) {
 
@@ -58,6 +67,7 @@ $(document).ready(function () {
         crystalLink = portArr[2].link;
         giphyLink = portArr[3].link;
         videoLink = portArr[4].link;
+        gitHubLink = portArr[5].link;
 
 
         var cardImage = $("<img>");
@@ -110,6 +120,10 @@ $(document).ready(function () {
 
     $(document).on("click", "#4", function () {
         window.open(videoLink);
+    });
+
+    $(document).on("click", "#5", function () {
+        window.open(gitHubLink);
     });
 
 });
