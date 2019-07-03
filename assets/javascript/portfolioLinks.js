@@ -98,6 +98,7 @@ $(document).ready(function () {
         card.append(cardImage);
         card.append(cardBody);
 
+
         $("#cardDeck").prepend(card);
 
     };
