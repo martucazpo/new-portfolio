@@ -50,7 +50,15 @@ $(document).ready(function () {
         description : "A link to my Git Hub pages"
     }
 
-    var portArr = [trainSched, psychicGame, crystalCol, getGiph, videoSearch, gitHub];
+    var liriBot = {
+        id : 6,
+        name : "Liri-Bot",
+        link : "https://martucazpo.github.io/Liri-node-app/",
+        image : "assets/images/Screenshot (12).png",
+        description : "A node.js application"
+    }
+
+    var portArr = [trainSched, psychicGame, crystalCol, getGiph, videoSearch, gitHub, liriBot];
 
     var trainLink;
     var psychicLink;
@@ -58,6 +66,7 @@ $(document).ready(function () {
     var giphyLink;
     var videoLink;
     var gitHubLink;
+    var LiriBotLink;
 
     for (var i = 0; i < portArr.length; i++) {
 
@@ -68,7 +77,7 @@ $(document).ready(function () {
         giphyLink = portArr[3].link;
         videoLink = portArr[4].link;
         gitHubLink = portArr[5].link;
-
+        liriBotLink = portArr[6].link;
 
         var cardImage = $("<img>");
         var pictImage = portArr[i].image;
@@ -125,6 +134,10 @@ $(document).ready(function () {
 
     $(document).on("click", "#5", function () {
         window.open(gitHubLink);
+    });
+
+    $(document).on("click", "#6", function () {
+        window.open(liriBotLink);
     });
 
 });
