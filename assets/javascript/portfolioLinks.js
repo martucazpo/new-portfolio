@@ -48,7 +48,7 @@ $(document).ready(function () {
         link : "https://github.com/martucazpo",
         image : "assets/images/Screenshot (7).png",
         description : "A link to my Git Hub pages"
-    }
+    };
 
     var liriBot = {
         id : 6,
@@ -56,9 +56,24 @@ $(document).ready(function () {
         link : "https://martucazpo.github.io/Liri-node-app/",
         image : "assets/images/Screenshot (12).png",
         description : "A node.js application"
+    };
+
+    var friendlyFriend = {
+        id : 7,
+        name: "Friendly-Friends!",
+        link:"https://fierce-chamber-13363.herokuapp.com/",
+        image : "assets/images/Screenshot (1).png",
+        description : "A full stack friend finder"
+    };
+    var burgers = {
+        id : 8,
+        name: "Burgers!",
+        link: "https://salty-cove-20056.herokuapp.com/",
+        image :"assets/images/Screenshot (2).png",
+        description : "A full stack burger app using handlebars, OMV, ORM and mysql"
     }
 
-    var portArr = [trainSched, psychicGame, crystalCol, getGiph, videoSearch, gitHub, liriBot];
+    var portArr = [trainSched, psychicGame, crystalCol, getGiph, videoSearch, gitHub, liriBot, friendlyFriend, burgers];
 
     var trainLink;
     var psychicLink;
@@ -66,7 +81,9 @@ $(document).ready(function () {
     var giphyLink;
     var videoLink;
     var gitHubLink;
-    var LiriBotLink;
+    var liriBotLink;
+    var friendlyLink;
+    var burgerLink;
 
     for (var i = 0; i < portArr.length; i++) {
 
@@ -78,6 +95,8 @@ $(document).ready(function () {
         videoLink = portArr[4].link;
         gitHubLink = portArr[5].link;
         liriBotLink = portArr[6].link;
+        friendlyLink = portArr[7].link;
+        burgerLink = portArr[8].link;
 
         var cardImage = $("<img>");
         var pictImage = portArr[i].image;
@@ -138,6 +157,14 @@ $(document).ready(function () {
 
     $(document).on("click", "#6", function () {
         window.open(liriBotLink);
+    });
+
+    $(document).on("click", "#7", function () {
+        window.open(friendlyLink);
+    });
+
+    $(document).on("click", "#7", function () {
+        window.open(burgerLink);
     });
 
 });
