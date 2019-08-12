@@ -71,9 +71,16 @@ $(document).ready(function () {
         link: "https://salty-cove-20056.herokuapp.com/",
         image :"assets/images/Screenshot (2).png",
         description : "A full stack burger app using handlebars, OMV, ORM and mysql"
-    }
+    };
+    var sequelizedBurger = {
+        id : 8,
+        name : "Sequelize My Burger Please",
+        link : "https://quiet-crag-21817.herokuapp.com/",
+        image : "assets/images/sequelizedBurger.png",
+        description : "The Burgers! app but with sequelize"
+    };
 
-    var portArr = [trainSched, psychicGame, crystalCol, getGiph, videoSearch, gitHub, liriBot, friendlyFriend, burgers];
+    var portArr = [trainSched, psychicGame, crystalCol, getGiph, videoSearch, gitHub, liriBot, friendlyFriend, burgers, sequelizedBurger];
 
     var trainLink;
     var psychicLink;
@@ -84,6 +91,7 @@ $(document).ready(function () {
     var liriBotLink;
     var friendlyLink;
     var burgerLink;
+    var sequelizedBurgerLink;
 
     for (var i = 0; i < portArr.length; i++) {
 
@@ -97,6 +105,7 @@ $(document).ready(function () {
         liriBotLink = portArr[6].link;
         friendlyLink = portArr[7].link;
         burgerLink = portArr[8].link;
+        sequelizedBurgerLink = portArr[9].link;
 
         var cardImage = $("<img>");
         var pictImage = portArr[i].image;
@@ -163,8 +172,13 @@ $(document).ready(function () {
         window.open(friendlyLink);
     });
 
-    $(document).on("click", "#7", function () {
+    $(document).on("click", "#8", function () {
         window.open(burgerLink);
     });
+
+    $(document).on("click", "#9", function () {
+        window.open(sequelizedBurgerLink);
+    });
+
 
 });
