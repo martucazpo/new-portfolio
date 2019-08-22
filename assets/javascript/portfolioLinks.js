@@ -73,14 +73,21 @@ $(document).ready(function () {
         description : "A full stack burger app using handlebars, OMV, ORM and mysql"
     };
     var sequelizedBurger = {
-        id : 8,
+        id : 9,
         name : "Sequelize My Burger Please",
         link : "https://quiet-crag-21817.herokuapp.com/",
         image : "assets/images/sequelizedBurger.png",
         description : "The Burgers! app but with sequelize"
     };
+    var groupProjectTwo = {
+        id : 10,
+        name : "Opinionated",
+        link : "https://mlmm-project2.herokuapp.com",
+        image : "assets/images/opinionated.png",
+        description: "A review app for movies/books/video games. Express, Sequel, JQuery, MySQL, Handlebars"
+    }
 
-    var portArr = [trainSched, psychicGame, crystalCol, getGiph, videoSearch, gitHub, liriBot, friendlyFriend, burgers, sequelizedBurger];
+    var portArr = [trainSched, psychicGame, crystalCol, getGiph, videoSearch, gitHub, liriBot, friendlyFriend, burgers, sequelizedBurger, groupProjectTwo];
 
     var trainLink;
     var psychicLink;
@@ -92,6 +99,7 @@ $(document).ready(function () {
     var friendlyLink;
     var burgerLink;
     var sequelizedBurgerLink;
+    var project2Link;
 
     for (var i = 0; i < portArr.length; i++) {
 
@@ -106,6 +114,7 @@ $(document).ready(function () {
         friendlyLink = portArr[7].link;
         burgerLink = portArr[8].link;
         sequelizedBurgerLink = portArr[9].link;
+        project2Link = portArr[10].link;
 
         var cardImage = $("<img>");
         var pictImage = portArr[i].image;
@@ -178,6 +187,10 @@ $(document).ready(function () {
 
     $(document).on("click", "#9", function () {
         window.open(sequelizedBurgerLink);
+    });
+
+    $(document).on("click", "#10", function () {
+        window.open(project2Link);
     });
 
 
