@@ -126,6 +126,14 @@ var groupProjectTwo = new Port(
     "A review app for movies/books/video games. Express, Sequel, JQuery, MySQL, Handlebars"
 );
 
+var newsOfTheWired = new Port(
+    12,
+    "News of the Wired",
+    "https://agile-mesa-63380.herokuapp.com/articles",
+    "assets/images/wired.png",
+    "A Node.js Web Scraper using Mongoose, Mongodb and Handlebars-Express"
+);
+
 $(document).ready(function () {
     trainSched.card();
     trainSched.button();
@@ -149,4 +157,6 @@ $(document).ready(function () {
     sequelizedBurger.button();
     groupProjectTwo.card();
     groupProjectTwo.button();
+    newsOfTheWired.card();
+    newsOfTheWired.button();
 });
