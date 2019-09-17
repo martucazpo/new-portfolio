@@ -134,6 +134,14 @@ var newsOfTheWired = new Port(
     "A Node.js Web Scraper using Mongoose, Mongodb and Handlebars-Express"
 );
 
+var clickyGame = new Port(
+    13,
+    "Clicky Game",
+    "https://fierce-ocean-38330.herokuapp.com",
+    "assets/images/clicky.png",
+    "A react.js game"
+);
+
 $(document).ready(function () {
     trainSched.card();
     trainSched.button();
@@ -159,4 +167,6 @@ $(document).ready(function () {
     groupProjectTwo.button();
     newsOfTheWired.card();
     newsOfTheWired.button();
+    clickyGame.card();
+    clickyGame.button();
 });
