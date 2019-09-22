@@ -142,6 +142,14 @@ var clickyGame = new Port(
     "A react.js game"
 );
 
+var googleSearchReact = new Port(
+    14,
+    "Google Search React",
+    "https://shrouded-inlet-36558.herokuapp.com",
+    "assets/images/google.png",
+    "A react.js REST app"
+);
+
 $(document).ready(function () {
     trainSched.card();
     trainSched.button();
@@ -169,4 +177,6 @@ $(document).ready(function () {
     newsOfTheWired.button();
     clickyGame.card();
     clickyGame.button();
+    googleSearchReact.card();
+    googleSearchReact.button();
 });
