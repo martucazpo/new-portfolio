@@ -54,7 +54,7 @@ var trainSched = new Port(
     "Train Schedualer",
     "https://martucazpo.github.io/trainSchedualor/",
     "assets/images/Screenshot (5).png",
-    "An imaginary train schedualer, using firebase",
+    "An imaginary train schedualer, using firebase: unstructured databases, JQuery",
     "https://github.com/martucazpo/trainSchedualor"
 );
 
@@ -63,7 +63,7 @@ var psychicGame = new Port(
     "Psychic Game",
     "https://martucazpo.github.io/psychicGame/",
     "assets/images/scott-rodgerson-375874-unsplash.jpg",
-    "A simple letter guessing game, javascript",
+    "A simple letter guessing game, javascript: vanilla javascript, game logic",
     "https://github.com/martucazpo/psychicGame"
 );
 
@@ -73,7 +73,7 @@ var crystalCol = new Port(
     "Crystal Collector",
     "https://martucazpo.github.io/unit-4-game",
     "assets/images/1-CrystalCollector.jpg",
-    "A game played by adding randomly generated numbers to equal a randomly generated total, javascript",
+    "A game played by adding randomly generated numbers to equal a randomly generated total, javascript: javascript/jquery, gaming logic, 'on-click' events",
     "https://github.com/martucazpo/unit-4-game"
 );
 
@@ -82,7 +82,7 @@ var getGiph = new Port(
     "Get Giphy With It",
     "https://martucazpo.github.io/getGiphyWiphIt",
     "assets/images/Screenshot (4).png",
-    "A type of search site for animal gifs, using giphy API, AJAX and jquery",
+    "A type of search site for animal gifs, using giphy API, AJAX and jquery: APIs. JQuery, 'on-click'",
     "https://github.com/martucazpo/getGiphyWiphIt"
 );
 
@@ -110,7 +110,7 @@ var liriBot = new Port(
     "Liri-Bot",
     "https://martucazpo.github.io/Liri-node-app/",
     "assets/images/Screenshot (12).png",
-    "A node.js application",
+    "A node.js application: Node.js and the command-line, npm",
     "https://github.com/martucazpo/Liri-node-app"
 );
 
@@ -119,7 +119,7 @@ var friendlyFriend = new Port(
     "Friendly-Friends!",
     "https://fierce-chamber-13363.herokuapp.com/",
     "assets/images/Screenshot (1).png",
-    "A full stack friend finder",
+    "A full stack friend finder: radio-buttons, server and routing",
     "https://github.com/martucazpo/Friendly-Friends-"
 );
 
@@ -128,7 +128,7 @@ var burgers = new Port(
     "Burgers!",
     "https://salty-cove-20056.herokuapp.com/",
     "assets/images/Screenshot (2).png",
-    "A full stack burger app using handlebars, OMV, ORM and mysql",
+    "A full stack burger app using handlebars, OMV, ORM and mysql: a server and routing with handlebars, database, creating proto-middleware",
     "https://github.com/martucazpo/Burgers"
 );
 
@@ -137,7 +137,7 @@ var sequelizedBurger = new Port(
     "Sequelize My Burger Please",
     "https://quiet-crag-21817.herokuapp.com/",
     "assets/images/sequelizedBurger.png",
-    "The Burgers! app but with sequelize",
+    "The Burgers! app but with sequelize: middleware with routing, handlebars, database",
     "https://github.com/martucazpo/sequelizeMyBurgerPlease"
 );
 
@@ -155,7 +155,7 @@ var newsOfTheWired = new Port(
     "News of the Wired",
     "https://agile-mesa-63380.herokuapp.com/articles",
     "assets/images/wired.png",
-    "A Node.js Web Scraper using Mongoose, Mongodb and Handlebars-Express",
+    "A Node.js Web Scraper using Mongoose, Mongodb and Handlebars-Express: routing using Mongodb and Mongoose, a genuine full stack app",
     "https://github.com/martucazpo/newsOfTheWired"
 );
 
@@ -164,7 +164,7 @@ var clickyGame = new Port(
     "Clicky Game",
     "https://fierce-ocean-38330.herokuapp.com",
     "assets/images/clicky.png",
-    "A react.js game",
+    "A react.js game: introduction to react; components and event handlers",
     "https://github.com/martucazpo/ClickyGame"
 );
 
@@ -173,7 +173,7 @@ var googleSearchReact = new Port(
     "Google Search React",
     "https://shrouded-inlet-36558.herokuapp.com",
     "assets/images/google.png",
-    "A react.js REST app",
+    "A react.js REST app: react plus server and routing, compontents, event handlers, react-router-dom and componentDidMount",
     "https://github.com/martucazpo/GoogleBooksReact"
 );
 
