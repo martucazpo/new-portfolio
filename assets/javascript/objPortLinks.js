@@ -10,9 +10,13 @@ function Port(id, name, link, image, description,gitHubLink) {
         var pictImage = this.image;
         cardImage.attr("style", "height:150px;width:auto");
         cardImage.attr("src", pictImage);
-        cardImage.attr("class", "card-image-top");
+        cardImage.attr("alt","Card image");
+        cardImage.attr("class", "card-img-top");
         cardImage.attr("id", this.id);
         cardImage.attr("type","button");
+        var cardHeader = $("<div>");
+        cardHeader.attr("class", "card-header");
+        cardHeader.text("Click on image to see project");
         var cardBody = $("<div>");
         cardBody.attr("class", "card-body");
         cardTitle = $("<h5>");
@@ -31,6 +35,7 @@ function Port(id, name, link, image, description,gitHubLink) {
         cardBody.append(cardButton);
         var card = $("<div>");
         card.attr("class", "card border-secondary mb-3 card-body text-secondary m-3 p-1");
+        card.append(cardHeader);
         card.append(cardImage);
         card.append(cardBody);
         $("#cardDeck").prepend(card);
