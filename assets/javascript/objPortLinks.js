@@ -225,7 +225,7 @@ $(document).ready(function () {
     googleSearchReact.card();
     googleSearchReact.imageButton();
     mortgageOptions.card();
-    mortgageOptions.button();
+    mortgageOptions.imageButton();
     nodeLogin.card();
-    nodeLogin.button();
+    nodeLogin.imageButton();
 });
