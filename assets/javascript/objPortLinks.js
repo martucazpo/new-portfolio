@@ -190,7 +190,7 @@ var nodeLogin = new Port(
     16,
     "Simple Node Login",
     "https://vast-stream-09563.herokuapp.com/login",
-    "assets/images/nodeLogin.png",
+    "assets/images/aonopening.png",
     "A simple login without a database from the site: Web Dev Simplified (link in github readme) that uses passport and ejs. Learning more about logins",
     "https://martucazpo.github.io/NodeLogin"
 );
