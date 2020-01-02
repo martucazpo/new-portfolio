@@ -195,6 +195,15 @@ var nodeLogin = new Port(
     "https://martucazpo.github.io/NodeLogin"
 );
 
+var fccPort = new Port(
+    17,
+    "My Portfolio for the Free Code Camp",
+    "https://martucazpo.github.io/FCC-portfolio/",
+    "assets/images/fcc-portfolio.png",
+    "These are my projects from the Free Code Camp",
+    "https://github.com/martucazpo/FCC-portfolio"
+);
+
 $(document).ready(function () {
     trainSched.card();
     trainSched.imageButton();
@@ -228,4 +237,6 @@ $(document).ready(function () {
     mortgageOptions.imageButton();
     nodeLogin.card();
     nodeLogin.imageButton();
+    fccPort.card();
+    fccPort.imageButton();
 });
